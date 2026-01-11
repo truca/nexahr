@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Nexa HR | Outsourcing de RRHH y Remuneraciones</title>
+    <meta
+      name="description"
+      content="Nexa HR conecta personas, procesos y resultados. Outsourcing de RRHH, remuneraciones, administración laboral, cumplimiento y reportería para empresas en Chile."
+    />
+    <meta name="theme-color" content="#0B1220" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Nexa HR | Outsourcing de RRHH y Remuneraciones"
+    />
+    <meta
+      property="og:description"
+      content="Externaliza RRHH con control, cumplimiento y datos claros. Nexa HR: Conectamos personas, procesos y resultados."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CL" />
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                950: "#070B14",
+                900: "#0B1220",
+                800: "#101A2E",
+                700: "#162544",
+                600: "#1E3260",
+                500: "#2A4482",
+                400: "#3B5AA8",
+                300: "#6B84C6",
+                200: "#A9B9E0",
+                100: "#E7ECF8",
+              },
+              graphite: {
+                950: "#0B0F16",
+                900: "#101826",
+                800: "#1D2939",
+                700: "#344054",
+                600: "#475467",
+                500: "#667085",
+                400: "#98A2B3",
+                300: "#D0D5DD",
+                200: "#EAECF0",
+                100: "#F2F4F7",
+                50: "#F9FAFB",
+              },
+              accent: {
+                600: "#14B8A6", // teal
+                500: "#2DD4BF",
+                100: "#CCFBF1",
+              },
+            },
+            boxShadow: {
+              soft: "0 10px 30px rgba(16, 24, 40, 0.10)",
+              soft2: "0 16px 50px rgba(16, 24, 40, 0.14)",
+            },
+            borderRadius: {
+              xl2: "1rem",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Optional: simple smooth scroll -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    <!-- JSON-LD (Organization) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Nexa HR",
+        "description": "Outsourcing de RRHH, remuneraciones, administración laboral, cumplimiento y reportería.",
+        "areaServed": "CL",
+        "url": "https://example.com",
+        "sameAs": []
+      }
+    </script>
+  </head>
+
+  <body class="bg-white text-graphite-900">
+    <!-- Top bar -->
+    <div class="bg-brand-900 text-brand-100">
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8"
+      >
+        <p class="text-xs sm:text-sm">
+          Outsourcing de RRHH y Remuneraciones para empresas en Chile.
+        </p>
+        <div class="hidden gap-3 sm:flex">
+          <a href="#contacto" class="text-xs sm:text-sm hover:text-white"
+            >Contacto</a
+          >
+          <span class="text-brand-300">|</span>
+          <a href="#servicios" class="text-xs sm:text-sm hover:text-white"
+            >Servicios</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-40 border-b border-graphite-200 bg-white/90 backdrop-blur"
+    >
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8"
+      >
+        <a href="#" class="flex items-center gap-2">
+          <div
+            class="grid h-10 w-10 place-items-center rounded-xl bg-brand-900 text-white shadow-soft"
+            aria-hidden="true"
+          >
+            N
+          </div>
+          <div class="leading-tight">
+            <p class="text-sm font-semibold text-graphite-900">Nexa HR</p>
+            <p class="text-xs text-graphite-600">
+              Personas • Procesos • Resultados
+            </p>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-6 md:flex">
+          <a
+            href="#servicios"
+            class="text-sm text-graphite-700 hover:text-graphite-950"
+            >Servicios</a
+          >
+          <a
+            href="#como-funciona"
+            class="text-sm text-graphite-700 hover:text-graphite-950"
+            >Cómo funciona</a
+          >
+          <a
+            href="#beneficios"
+            class="text-sm text-graphite-700 hover:text-graphite-950"
+            >Beneficios</a
+          >
+          <a
+            href="#faq"
+            class="text-sm text-graphite-700 hover:text-graphite-950"
+            >FAQ</a
+          >
+          <a
+            href="#contacto"
+            class="rounded-xl bg-brand-900 px-4 py-2 text-sm font-medium text-white shadow-soft hover:bg-brand-800"
+          >
+            Agendar diagnóstico
+          </a>
+        </nav>
+
+        <a
+          href="#contacto"
+          class="inline-flex items-center rounded-xl bg-brand-900 px-4 py-2 text-sm font-medium text-white shadow-soft hover:bg-brand-800 md:hidden"
+        >
+          Contacto
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10">
+        <div
+          class="absolute -top-24 left-1/2 h-72 w-[48rem] -translate-x-1/2 rounded-full bg-brand-100 blur-3xl"
+        ></div>
+        <div
+          class="absolute -bottom-24 right-[-6rem] h-72 w-72 rounded-full bg-accent-100 blur-3xl"
+        ></div>
+      </div>
+
+      <div
+        class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-12 lg:px-8 lg:py-20"
+      >
+        <div class="lg:col-span-7">
+          <p
+            class="inline-flex items-center gap-2 rounded-full border border-graphite-200 bg-white px-3 py-1 text-xs text-graphite-700 shadow-soft"
+          >
+            <span class="h-2 w-2 rounded-full bg-accent-600"></span>
+            Outsourcing con foco en cumplimiento, control y claridad
+          </p>
+
+          <h1
+            class="mt-6 text-4xl font-semibold tracking-tight text-graphite-950 sm:text-5xl"
+          >
+            Conectamos <span class="text-brand-900">personas</span>,
+            <span class="text-brand-900">procesos</span> y
+            <span class="text-brand-900">resultados</span>.
+          </h1>
+
+          <p
+            class="mt-5 max-w-2xl text-base leading-relaxed text-graphite-700 sm:text-lg"
+          >
+            Nexa HR entrega outsourcing de RRHH y remuneraciones con estándares
+            técnicos altos, reduciendo riesgo operativo y asegurando información
+            confiable para decisiones de negocio.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a
+              href="#contacto"
+              class="inline-flex items-center justify-center rounded-xl bg-brand-900 px-6 py-3 text-sm font-medium text-white shadow-soft hover:bg-brand-800"
+            >
+              Solicitar diagnóstico sin costo
+            </a>
+            <a
+              href="#servicios"
+              class="inline-flex items-center justify-center rounded-xl border border-graphite-300 bg-white px-6 py-3 text-sm font-medium text-graphite-900 hover:bg-graphite-50"
+            >
+              Ver servicios
+            </a>
+          </div>
+
+          <div class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div
+              class="rounded-xl2 border border-graphite-200 bg-white p-4 shadow-soft"
+            >
+              <p class="text-xs font-medium text-graphite-600">Enfoque</p>
+              <p class="mt-1 text-sm font-semibold text-graphite-900">
+                Precisión y control
+              </p>
+              <p class="mt-2 text-sm text-graphite-700">
+                Procesos estables y auditables.
+              </p>
+            </div>
+            <div
+              class="rounded-xl2 border border-graphite-200 bg-white p-4 shadow-soft"
+            >
+              <p class="text-xs font-medium text-graphite-600">Prioridad</p>
+              <p class="mt-1 text-sm font-semibold text-graphite-900">
+                Cumplimiento
+              </p>
+              <p class="mt-2 text-sm text-graphite-700">
+                Reducción de riesgos laborales.
+              </p>
+            </div>
+            <div
+              class="rounded-xl2 border border-graphite-200 bg-white p-4 shadow-soft"
+            >
+              <p class="text-xs font-medium text-graphite-600">Entrega</p>
+              <p class="mt-1 text-sm font-semibold text-graphite-900">
+                Datos claros
+              </p>
+              <p class="mt-2 text-sm text-graphite-700">
+                Reportería útil para gestión.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right card -->
+        <div class="lg:col-span-5">
+          <div
+            class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft2"
+          >
+            <h2 class="text-lg font-semibold text-graphite-950">
+              Qué puedes externalizar hoy
+            </h2>
+            <p class="mt-2 text-sm text-graphite-700">
+              Una implementación rápida, sin fricción, con un plan de trabajo y
+              SLA definidos.
+            </p>
+
+            <ul class="mt-5 space-y-3 text-sm text-graphite-800">
+              <li class="flex gap-3">
+                <span
+                  class="mt-0.5 h-5 w-5 flex-none rounded-full bg-accent-100 text-accent-600 grid place-items-center"
+                  >✓</span
+                >
+                Remuneraciones (payroll) y cierres mensuales
+              </li>
+              <li class="flex gap-3">
+                <span
+                  class="mt-0.5 h-5 w-5 flex-none rounded-full bg-accent-100 text-accent-600 grid place-items-center"
+                  >✓</span
+                >
+                Administración laboral y documentación
+              </li>
+              <li class="flex gap-3">
+                <span
+                  class="mt-0.5 h-5 w-5 flex-none rounded-full bg-accent-100 text-accent-600 grid place-items-center"
+                  >✓</span
+                >
+                Cumplimiento normativo y soporte ante auditorías
+              </li>
+              <li class="flex gap-3">
+                <span
+                  class="mt-0.5 h-5 w-5 flex-none rounded-full bg-accent-100 text-accent-600 grid place-items-center"
+                  >✓</span
+                >
+                Reportería, indicadores y análisis de personas
+              </li>
+            </ul>
+
+            <div
+              class="mt-6 rounded-xl border border-graphite-200 bg-graphite-50 p-4"
+            >
+              <p class="text-xs font-medium text-graphite-600">Eslogan</p>
+              <p class="mt-1 text-sm font-semibold text-graphite-900">
+                Conectamos personas, procesos y resultados.
+              </p>
+            </div>
+
+            <div class="mt-6">
+              <a
+                href="#contacto"
+                class="inline-flex w-full items-center justify-center rounded-xl bg-brand-900 px-5 py-3 text-sm font-medium text-white shadow-soft hover:bg-brand-800"
+              >
+                Cotizar servicio
+              </a>
+              <p class="mt-2 text-center text-xs text-graphite-600">
+                Respuesta en 24–48 horas hábiles (configurable).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / logos -->
+    <section class="border-y border-graphite-200 bg-graphite-50">
+      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div class="grid gap-6 lg:grid-cols-12 lg:items-center">
+          <div class="lg:col-span-4">
+            <h3 class="text-base font-semibold text-graphite-950">
+              Pensado para decisiones serias
+            </h3>
+            <p class="mt-2 text-sm text-graphite-700">
+              Una marca corporativa, con entrega clara y foco en tranquilidad
+              operativa.
+            </p>
+          </div>
+          <div class="lg:col-span-8">
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+              <div
+                class="rounded-xl border border-graphite-200 bg-white p-4 text-center text-xs text-graphite-600"
+              >
+                SLA y trazabilidad
+              </div>
+              <div
+                class="rounded-xl border border-graphite-200 bg-white p-4 text-center text-xs text-graphite-600"
+              >
+                Reportería ejecutiva
+              </div>
+              <div
+                class="rounded-xl border border-graphite-200 bg-white p-4 text-center text-xs text-graphite-600"
+              >
+                Cumplimiento laboral
+              </div>
+              <div
+                class="rounded-xl border border-graphite-200 bg-white p-4 text-center text-xs text-graphite-600"
+              >
+                Procesos auditables
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section
+      id="servicios"
+      class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8"
+    >
+      <div class="max-w-2xl">
+        <p class="text-sm font-medium text-brand-900">Servicios</p>
+        <h2
+          class="mt-2 text-3xl font-semibold tracking-tight text-graphite-950"
+        >
+          Externaliza RRHH con control y claridad
+        </h2>
+        <p class="mt-3 text-base text-graphite-700">
+          Servicios modulares. Puedes partir con un alcance acotado y expandir
+          según madurez y necesidades.
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Card 1 -->
+        <article
+          class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+        >
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-graphite-950">
+              Outsourcing de RRHH
+            </h3>
+            <span
+              class="rounded-full bg-brand-100 px-3 py-1 text-xs font-medium text-brand-900"
+              >Core</span
+            >
+          </div>
+          <p class="mt-3 text-sm text-graphite-700">
+            Gestión integral o parcial de procesos de personas, con flujos
+            definidos y responsables claros.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-graphite-800">
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Gestión de incidencias y
+              consultas
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Onboarding/offboarding
+              administrativo
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Control documental
+            </li>
+          </ul>
+        </article>
+
+        <!-- Card 2 -->
+        <article
+          class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+        >
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-graphite-950">
+              Remuneraciones (Payroll)
+            </h3>
+            <span
+              class="rounded-full bg-brand-100 px-3 py-1 text-xs font-medium text-brand-900"
+              >Especialidad</span
+            >
+          </div>
+          <p class="mt-3 text-sm text-graphite-700">
+            Cierre mensual con validaciones, controles y entregables
+            estandarizados para minimizar errores.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-graphite-800">
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Pre-cierre y conciliaciones
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Cálculo y revisión de
+              liquidaciones
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Entrega de reportes y
+              respaldos
+            </li>
+          </ul>
+        </article>
+
+        <!-- Card 3 -->
+        <article
+          class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+        >
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-graphite-950">
+              Administración Laboral
+            </h3>
+            <span
+              class="rounded-full bg-graphite-100 px-3 py-1 text-xs font-medium text-graphite-800"
+              >Operación</span
+            >
+          </div>
+          <p class="mt-3 text-sm text-graphite-700">
+            Mantención de contratos, anexos y documentación laboral, con orden y
+            trazabilidad.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-graphite-800">
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Contratos y anexos
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Gestión de vacaciones y
+              licencias
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Carpetas digitales y
+              control
+            </li>
+          </ul>
+        </article>
+
+        <!-- Card 4 -->
+        <article
+          class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+        >
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-graphite-950">
+              Cumplimiento y Normativa
+            </h3>
+            <span
+              class="rounded-full bg-graphite-100 px-3 py-1 text-xs font-medium text-graphite-800"
+              >Riesgo</span
+            >
+          </div>
+          <p class="mt-3 text-sm text-graphite-700">
+            Revisión de brechas y soporte continuo para reducir contingencias y
+            sostener estándares.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-graphite-800">
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Checklist de cumplimiento
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Apoyo ante auditorías
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Protocolos y evidencias
+            </li>
+          </ul>
+        </article>
+
+        <!-- Card 5 -->
+        <article
+          class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+        >
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-graphite-950">
+              Reportería e Indicadores
+            </h3>
+            <span
+              class="rounded-full bg-graphite-100 px-3 py-1 text-xs font-medium text-graphite-800"
+              >Datos</span
+            >
+          </div>
+          <p class="mt-3 text-sm text-graphite-700">
+            Información ejecutiva para control y gestión: clara, periódica y
+            enfocada en decisiones.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-graphite-800">
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> KPIs de dotación y
+              movimientos
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Costos de personal y
+              tendencias
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Tableros y reportes
+              mensuales
+            </li>
+          </ul>
+        </article>
+
+        <!-- Card 6 -->
+        <article
+          class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+        >
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-graphite-950">
+              Consultoría Específica
+            </h3>
+            <span
+              class="rounded-full bg-graphite-100 px-3 py-1 text-xs font-medium text-graphite-800"
+              >Proyecto</span
+            >
+          </div>
+          <p class="mt-3 text-sm text-graphite-700">
+            Intervenciones acotadas para ordenar, estandarizar o mejorar un
+            proceso crítico.
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-graphite-800">
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Diagnóstico y roadmap
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Diseño de procesos y
+              controles
+            </li>
+            <li class="flex gap-2">
+              <span class="text-accent-600">•</span> Implementación y handover
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="como-funciona" class="bg-graphite-50">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <p class="text-sm font-medium text-brand-900">Cómo funciona</p>
+          <h2
+            class="mt-2 text-3xl font-semibold tracking-tight text-graphite-950"
+          >
+            Implementación simple, sin fricción
+          </h2>
+          <p class="mt-3 text-base text-graphite-700">
+            Un modelo de trabajo diseñado para ser predecible, medible y fácil
+            de operar.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-4">
+          <div
+            class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+          >
+            <p class="text-xs font-semibold text-brand-900">Paso 1</p>
+            <h3 class="mt-2 text-base font-semibold text-graphite-950">
+              Diagnóstico
+            </h3>
+            <p class="mt-2 text-sm text-graphite-700">
+              Levantamiento de contexto, dolor, riesgos y prioridades.
+            </p>
+          </div>
+
+          <div
+            class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+          >
+            <p class="text-xs font-semibold text-brand-900">Paso 2</p>
+            <h3 class="mt-2 text-base font-semibold text-graphite-950">
+              Diseño y SLA
+            </h3>
+            <p class="mt-2 text-sm text-graphite-700">
+              Alcance, responsables, calendario, controles y entregables.
+            </p>
+          </div>
+
+          <div
+            class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+          >
+            <p class="text-xs font-semibold text-brand-900">Paso 3</p>
+            <h3 class="mt-2 text-base font-semibold text-graphite-950">
+              Transición
+            </h3>
+            <p class="mt-2 text-sm text-graphite-700">
+              Handover ordenado, validación y estabilización operativa.
+            </p>
+          </div>
+
+          <div
+            class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+          >
+            <p class="text-xs font-semibold text-brand-900">Paso 4</p>
+            <h3 class="mt-2 text-base font-semibold text-graphite-950">
+              Operación y mejora
+            </h3>
+            <p class="mt-2 text-sm text-graphite-700">
+              Ejecución mensual, reportería y ajustes continuos.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-10 rounded-xl2 border border-brand-200 bg-white p-6 shadow-soft"
+        >
+          <div class="grid gap-6 lg:grid-cols-12 lg:items-center">
+            <div class="lg:col-span-8">
+              <h3 class="text-lg font-semibold text-graphite-950">
+                Entregables típicos
+              </h3>
+              <p class="mt-2 text-sm text-graphite-700">
+                Definimos entregables “mínimos” por servicio para asegurar
+                previsibilidad y trazabilidad.
+              </p>
+              <div class="mt-4 grid gap-3 sm:grid-cols-2">
+                <div
+                  class="rounded-xl border border-graphite-200 bg-graphite-50 p-4 text-sm text-graphite-800"
+                >
+                  Calendario de cierre y checklist de controles
+                </div>
+                <div
+                  class="rounded-xl border border-graphite-200 bg-graphite-50 p-4 text-sm text-graphite-800"
+                >
+                  Reporte ejecutivo mensual (KPIs + incidencias)
+                </div>
+                <div
+                  class="rounded-xl border border-graphite-200 bg-graphite-50 p-4 text-sm text-graphite-800"
+                >
+                  Bitácora de cambios / trazabilidad
+                </div>
+                <div
+                  class="rounded-xl border border-graphite-200 bg-graphite-50 p-4 text-sm text-graphite-800"
+                >
+                  Respaldo documental y evidencias
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-4">
+              <a
+                href="#contacto"
+                class="inline-flex w-full items-center justify-center rounded-xl bg-brand-900 px-6 py-3 text-sm font-medium text-white shadow-soft hover:bg-brand-800"
+              >
+                Hablar con Nexa HR
+              </a>
+              <p class="mt-2 text-center text-xs text-graphite-600">
+                Ajustamos alcance según tamaño y complejidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section
+      id="beneficios"
+      class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8"
+    >
+      <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+        <div class="lg:col-span-5">
+          <p class="text-sm font-medium text-brand-900">Beneficios</p>
+          <h2
+            class="mt-2 text-3xl font-semibold tracking-tight text-graphite-950"
+          >
+            Menos riesgo. Más control. Mejor información.
+          </h2>
+          <p class="mt-3 text-base text-graphite-700">
+            Externalizar no es “delegar”; es profesionalizar la operación con
+            estándares, controles y datos.
+          </p>
+
+          <div
+            class="mt-6 rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+          >
+            <h3 class="text-base font-semibold text-graphite-950">
+              Mensajes clave
+            </h3>
+            <ul class="mt-3 space-y-2 text-sm text-graphite-800">
+              <li class="flex gap-2">
+                <span class="text-accent-600">•</span> RRHH sin errores ni
+                improvisación.
+              </li>
+              <li class="flex gap-2">
+                <span class="text-accent-600">•</span> Externaliza con
+                tranquilidad y trazabilidad.
+              </li>
+              <li class="flex gap-2">
+                <span class="text-accent-600">•</span> Datos claros para
+                decisiones correctas.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div
+              class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+            >
+              <h3 class="text-base font-semibold text-graphite-950">
+                Rigor técnico
+              </h3>
+              <p class="mt-2 text-sm text-graphite-700">
+                Validaciones, checklist y controles para procesos críticos como
+                payroll y documentación.
+              </p>
+            </div>
+
+            <div
+              class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+            >
+              <h3 class="text-base font-semibold text-graphite-950">
+                Cumplimiento continuo
+              </h3>
+              <p class="mt-2 text-sm text-graphite-700">
+                Reducción de contingencias laborales y soporte ante auditorías
+                con evidencias ordenadas.
+              </p>
+            </div>
+
+            <div
+              class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+            >
+              <h3 class="text-base font-semibold text-graphite-950">
+                Visibilidad ejecutiva
+              </h3>
+              <p class="mt-2 text-sm text-graphite-700">
+                Reportería útil para gerencia: costos, dotación, movimientos,
+                incidencias y tendencias.
+              </p>
+            </div>
+
+            <div
+              class="rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+            >
+              <h3 class="text-base font-semibold text-graphite-950">
+                Escalabilidad
+              </h3>
+              <p class="mt-2 text-sm text-graphite-700">
+                Servicios modulares para crecer desde una necesidad puntual a un
+                modelo completo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Mini testimonial placeholders -->
+          <div class="mt-8 grid gap-6 md:grid-cols-2">
+            <figure
+              class="rounded-xl2 border border-graphite-200 bg-graphite-50 p-6"
+            >
+              <blockquote class="text-sm text-graphite-800">
+                “Antes del cambio, el cierre era estresante. Hoy tenemos un
+                calendario claro, controles y reportes confiables.”
+              </blockquote>
+              <figcaption class="mt-3 text-xs font-medium text-graphite-600">
+                Testimonio (placeholder) — Gerencia Administración y Finanzas
+              </figcaption>
+            </figure>
+
+            <figure
+              class="rounded-xl2 border border-graphite-200 bg-graphite-50 p-6"
+            >
+              <blockquote class="text-sm text-graphite-800">
+                “La documentación dejó de ser un dolor. Todo está trazable,
+                ordenado y listo para auditoría.”
+              </blockquote>
+              <figcaption class="mt-3 text-xs font-medium text-graphite-600">
+                Testimonio (placeholder) — Jefatura de RRHH
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="bg-brand-900">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-12 lg:items-center">
+          <div class="lg:col-span-8">
+            <h2
+              class="text-2xl font-semibold tracking-tight text-white sm:text-3xl"
+            >
+              ¿Quieres externalizar RRHH sin perder control?
+            </h2>
+            <p class="mt-3 text-sm text-brand-100 sm:text-base">
+              Coordinemos un diagnóstico breve para entender alcance, riesgos y
+              un plan de implementación.
+            </p>
+          </div>
+          <div class="lg:col-span-4">
+            <a
+              href="#contacto"
+              class="inline-flex w-full items-center justify-center rounded-xl bg-white px-6 py-3 text-sm font-medium text-brand-900 shadow-soft hover:bg-brand-100"
+            >
+              Agendar diagnóstico
+            </a>
+            <p class="mt-2 text-center text-xs text-brand-200">
+              Sin compromiso. Con entregable inicial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="text-sm font-medium text-brand-900">FAQ</p>
+        <h2
+          class="mt-2 text-3xl font-semibold tracking-tight text-graphite-950"
+        >
+          Preguntas frecuentes
+        </h2>
+        <p class="mt-3 text-base text-graphite-700">
+          Respuestas orientadas a dueños, finanzas y RRHH.
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-2">
+        <details
+          class="group rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+        >
+          <summary
+            class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-graphite-950"
+          >
+            ¿Con qué tamaño de empresa trabajan?
+            <span
+              class="ml-4 text-graphite-500 group-open:rotate-180 transition"
+              >⌄</span
+            >
+          </summary>
+          <p class="mt-3 text-sm text-graphite-700">
+            El modelo es modular. Se adapta tanto a pymes como a empresas
+            medianas, ajustando alcance, SLA y reportería.
+          </p>
+        </details>
+
+        <details
+          class="group rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+        >
+          <summary
+            class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-graphite-950"
+          >
+            ¿Cómo aseguran calidad y trazabilidad?
+            <span
+              class="ml-4 text-graphite-500 group-open:rotate-180 transition"
+              >⌄</span
+            >
+          </summary>
+          <p class="mt-3 text-sm text-graphite-700">
+            Definimos checklist, calendario, controles y entregables mínimos.
+            Todo cambio relevante se registra y respalda.
+          </p>
+        </details>
+
+        <details
+          class="group rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+        >
+          <summary
+            class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-graphite-950"
+          >
+            ¿Cuánto demora la implementación?
+            <span
+              class="ml-4 text-graphite-500 group-open:rotate-180 transition"
+              >⌄</span
+            >
+          </summary>
+          <p class="mt-3 text-sm text-graphite-700">
+            Depende del alcance y estado actual. Se puede partir por un servicio
+            puntual (por ejemplo payroll) y expandir.
+          </p>
+        </details>
+
+        <details
+          class="group rounded-xl2 border border-graphite-200 bg-white p-6 shadow-soft"
+        >
+          <summary
+            class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-graphite-950"
+          >
+            ¿Entregan reportes para gerencia/finanzas?
+            <span
+              class="ml-4 text-graphite-500 group-open:rotate-180 transition"
+              >⌄</span
+            >
+          </summary>
+          <p class="mt-3 text-sm text-graphite-700">
+            Sí. Los reportes se definen por necesidad (costos, dotación,
+            movimientos, incidencias) y se entregan con periodicidad acordada.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contacto" class="bg-graphite-50">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+          <div class="lg:col-span-5">
+            <p class="text-sm font-medium text-brand-900">Contacto</p>
+            <h2
+              class="mt-2 text-3xl font-semibold tracking-tight text-graphite-950"
+            >
+              Solicita un diagnóstico
+            </h2>
+            <p class="mt-3 text-base text-graphite-700">
+              Cuéntanos tu contexto y te proponemos un alcance inicial con
+              prioridades, riesgos y plan de trabajo.
+            </p>
+
+            <div class="mt-6 space-y-4">
+              <div
+                class="rounded-xl2 border border-graphite-200 bg-white p-5 shadow-soft"
+              >
+                <p class="text-xs font-semibold text-graphite-600">Correo</p>
+                <p class="mt-1 text-sm font-medium text-graphite-900">
+                  <a class="hover:underline" href="mailto:contacto@nexahr.cl"
+                    >contacto@nexahr.cl</a
+                  >
+                </p>
+              </div>
+
+              <div
+                class="rounded-xl2 border border-graphite-200 bg-white p-5 shadow-soft"
+              >
+                <p class="text-xs font-semibold text-graphite-600">
+                  Teléfono / WhatsApp
+                </p>
+                <p class="mt-1 text-sm font-medium text-graphite-900">
+                  <a class="hover:underline" href="tel:+56900000000"
+                    >+56 9 0000 0000</a
+                  >
+                </p>
+                <p class="mt-2 text-xs text-graphite-600">
+                  Reemplaza este número por el definitivo.
+                </p>
+              </div>
+
+              <div
+                class="rounded-xl2 border border-brand-200 bg-white p-5 shadow-soft"
+              >
+                <p class="text-xs font-semibold text-brand-900">Agenda</p>
+                <p class="mt-1 text-sm text-graphite-800">
+                  Si usas Calendly u otra herramienta, enlázala aquí.
+                </p>
+                <a
+                  href="#"
+                  class="mt-3 inline-flex items-center justify-center rounded-xl bg-brand-900 px-4 py-2 text-sm font-medium text-white hover:bg-brand-800"
+                >
+                  Agendar reunión
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <form
+              class="rounded-xl2 border border-graphite-200 bg-white p-8 shadow-soft"
+              action="#"
+              method="post"
+            >
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div class="sm:col-span-1">
+                  <label
+                    class="text-sm font-medium text-graphite-900"
+                    for="nombre"
+                    >Nombre</label
+                  >
+                  <input
+                    id="nombre"
+                    name="nombre"
+                    type="text"
+                    required
+                    class="mt-2 w-full rounded-xl border border-graphite-300 px-4 py-3 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
+                    placeholder="Nombre y apellido"
+                  />
+                </div>
+
+                <div class="sm:col-span-1">
+                  <label
+                    class="text-sm font-medium text-graphite-900"
+                    for="empresa"
+                    >Empresa</label
+                  >
+                  <input
+                    id="empresa"
+                    name="empresa"
+                    type="text"
+                    required
+                    class="mt-2 w-full rounded-xl border border-graphite-300 px-4 py-3 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
+                    placeholder="Razón social"
+                  />
+                </div>
+
+                <div class="sm:col-span-1">
+                  <label
+                    class="text-sm font-medium text-graphite-900"
+                    for="email"
+                    >Email</label
+                  >
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    class="mt-2 w-full rounded-xl border border-graphite-300 px-4 py-3 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
+                    placeholder="nombre@empresa.cl"
+                  />
+                </div>
+
+                <div class="sm:col-span-1">
+                  <label
+                    class="text-sm font-medium text-graphite-900"
+                    for="telefono"
+                    >Teléfono</label
+                  >
+                  <input
+                    id="telefono"
+                    name="telefono"
+                    type="tel"
+                    class="mt-2 w-full rounded-xl border border-graphite-300 px-4 py-3 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
+                    placeholder="+56 9 XXXX XXXX"
+                  />
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label
+                    class="text-sm font-medium text-graphite-900"
+                    for="servicio"
+                    >Servicio de interés</label
+                  >
+                  <select
+                    id="servicio"
+                    name="servicio"
+                    class="mt-2 w-full rounded-xl border border-graphite-300 bg-white px-4 py-3 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
+                  >
+                    <option>Outsourcing de RRHH</option>
+                    <option>Remuneraciones (Payroll)</option>
+                    <option>Administración Laboral</option>
+                    <option>Cumplimiento y Normativa</option>
+                    <option>Reportería e Indicadores</option>
+                    <option>Consultoría Específica</option>
+                  </select>
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label
+                    class="text-sm font-medium text-graphite-900"
+                    for="mensaje"
+                    >Contexto</label
+                  >
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    class="mt-2 w-full rounded-xl border border-graphite-300 px-4 py-3 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
+                    placeholder="Cuéntanos tamaño aproximado, dolor principal y urgencia."
+                  ></textarea>
+                </div>
+              </div>
+
+              <div
+                class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+              >
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center rounded-xl bg-brand-900 px-6 py-3 text-sm font-medium text-white shadow-soft hover:bg-brand-800"
+                >
+                  Enviar solicitud
+                </button>
+                <p class="text-xs text-graphite-600">
+                  Al enviar, aceptas ser contactado para fines de coordinación
+                  comercial.
+                </p>
+              </div>
+            </form>
+
+            <p class="mt-4 text-xs text-graphite-600">
+              Nota: para conectar este formulario, integra tu backend (por
+              ejemplo, endpoint REST, serverless, Zapier/Make, etc.).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-12">
+          <div class="lg:col-span-5">
+            <div class="flex items-center gap-2">
+              <div
+                class="grid h-10 w-10 place-items-center rounded-xl bg-brand-900 text-white"
+              >
+                N
+              </div>
+              <div class="leading-tight">
+                <p class="text-sm font-semibold text-graphite-900">Nexa HR</p>
+                <p class="text-xs text-graphite-600">
+                  Conectamos personas, procesos y resultados.
+                </p>
+              </div>
+            </div>
+            <p class="mt-4 max-w-md text-sm text-graphite-700">
+              Outsourcing de RRHH y remuneraciones con foco en cumplimiento,
+              control y claridad operativa.
+            </p>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="grid gap-6 sm:grid-cols-3">
+              <div>
+                <p class="text-sm font-semibold text-graphite-900">
+                  Navegación
+                </p>
+                <ul class="mt-3 space-y-2 text-sm text-graphite-700">
+                  <li>
+                    <a class="hover:text-graphite-950" href="#servicios"
+                      >Servicios</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hover:text-graphite-950" href="#como-funciona"
+                      >Cómo funciona</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hover:text-graphite-950" href="#beneficios"
+                      >Beneficios</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hover:text-graphite-950" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="text-sm font-semibold text-graphite-900">Servicios</p>
+                <ul class="mt-3 space-y-2 text-sm text-graphite-700">
+                  <li>
+                    <a class="hover:text-graphite-950" href="#servicios"
+                      >Payroll</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hover:text-graphite-950" href="#servicios"
+                      >Administración laboral</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hover:text-graphite-950" href="#servicios"
+                      >Cumplimiento</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hover:text-graphite-950" href="#servicios"
+                      >Reportería</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="text-sm font-semibold text-graphite-900">Contacto</p>
+                <ul class="mt-3 space-y-2 text-sm text-graphite-700">
+                  <li>
+                    <a
+                      class="hover:text-graphite-950"
+                      href="mailto:contacto@nexahr.cl"
+                      >contacto@nexahr.cl</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hover:text-graphite-950" href="tel:+56900000000"
+                      >+56 9 0000 0000</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hover:text-graphite-950" href="#contacto"
+                      >Formulario</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-10 flex flex-col gap-3 border-t border-graphite-200 pt-6 sm:flex-row sm:items-center sm:justify-between"
+        >
+          <p class="text-xs text-graphite-600">
+            © <span id="year"></span> Nexa HR. Todos los derechos reservados.
+          </p>
+          <div class="flex gap-4 text-xs text-graphite-600">
+            <a href="#" class="hover:text-graphite-950"
+              >Política de privacidad</a
+            >
+            <a href="#" class="hover:text-graphite-950">Términos</a>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>
